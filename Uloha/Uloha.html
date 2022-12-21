@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uloha</title>
+        <link href="CSS/ulohaStyle.css" rel="stylesheet"/>
+        
+        </style>
+        <script src="JavaScript/uloha.js"></script>
+    </head>
+    <body>
+        <header>Items</header><br/>
+        <div id="nazvy"><div id="naz">Name</div><div id="mnoz">Quantity (kg)</div><div id="cena">Price/kg</div></div>
+        <div id="content">
+            <div id="controls">
+            <button id="filterBtn" onclick="Filter()">Filter</button>
+            <input type="number" id="inputNum"/><br/>
+            <button id="lessBtn" onclick="SymbolFilter(this)"><</button><button id="moreBtn" onclick="SymbolFilter(this)">></button><button id="equalBtn" onclick="SymbolFilter(this)">=</button><br/>
+            <button id="mnozBtn" onclick="propertyBtn(this)">Quantity</button><button id="cenaBtn" onclick="propertyBtn(this)">Price</button>
+            </div>
+            <div id="items-container">
+                <div class="item-containers"><span class="nazev-span">Clay</span><span class="mnoz-span">170</span><span class="cena-span">55</span></div>
+                <div class="item-containers"><span class="nazev-span">Wood</span><span class="mnoz-span">146</span><span class="cena-span">130</span></div>
+                <div class="item-containers"><span class="nazev-span">Sand</span><span class="mnoz-span">220</span><span class="cena-span">90</span></div>
+                <div class="item-containers"><span class="nazev-span">Steel</span><span class="mnoz-span">248</span><span class="cena-span">160</span></div>
+                <div class="item-containers"><span class="nazev-span">Concrete</span><span class="mnoz-span">175</span><span class="cena-span">180</span></div>
+            </div>
+        </div>
+    </body>
+</html>
